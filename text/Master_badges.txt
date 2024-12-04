@@ -1,0 +1,8 @@
+INSERT INTO badges (badge_id, badge_name, badge_icon_url, badge_description)
+VALUES
+    (1, 'Gold Badge', 'https://cdn3.vectorstock.com/i/1000x1000/67/07/golden-award-badge-vector-14876707.jpg', 'Awarded for exceptional performance'),
+    (2, 'Silver Badge', 'https://thumbs.dreamstime.com/z/silver-badge-12804081.jpg', 'Awarded for outstanding performance'),
+    (3, 'Bronze Badge', 'https://cdn4.vectorstock.com/i/1000x1000/58/43/bronze-award-badge-vector-22175843.jpg', 'Awarded for notable performance');
+
+
+

@@ -1,0 +1,104 @@
+spinwheel_config spinwheel_offers badge_master
+
+
+
+
+Connected to PostgreSQL database.
+Attributes of table 'user_badges':
+Column: user_id, Type: bigint, Nullable: NO
+Column: badge_id, Type: integer, Nullable: NO
+Column: earned_at, Type: timestamp without time zone, Nullable: YES
+Column: is_active, Type: boolean, Nullable: YES
+Database connection closed.
+
+
+
+Connected to PostgreSQL database.
+Attributes of table 'spinwheel_config':
+Column: config_id, Type: integer, Nullable: NO
+Column: max_spins_per_user, Type: integer, Nullable: YES
+Column: cooldown_period, Type: interval, Nullable: YES
+Column: is_active, Type: boolean, Nullable: YES
+Column: created_at, Type: timestamp without time zone, Nullable: YES
+Column: updated_at, Type: timestamp without time zone, Nullable: YES
+Database connection closed.
+
+
+Connected to PostgreSQL database.
+Attributes of table 'spinwheel_offers':
+Column: offer_id, Type: integer, Nullable: NO
+Column: probability_percentage, Type: numeric, Nullable: NO
+Column: is_active, Type: boolean, Nullable: YES
+Column: created_at, Type: timestamp without time zone, Nullable: YES
+Column: updated_at, Type: timestamp without time zone, Nullable: YES
+Column: offer_name, Type: character varying, Nullable: NO
+Column: offer_description, Type: text, Nullable: YES
+Column: offer_type, Type: character varying, Nullable: NO
+Column: offer_value, Type: character varying, Nullable: NO
+Database connection closed.
+
+
+Connected to PostgreSQL database.
+Attributes of table 'badge_master':
+Column: badge_id, Type: integer, Nullable: NO
+Column: created_at, Type: timestamp without time zone, Nullable: YES
+Column: updated_at, Type: timestamp without time zone, Nullable: YES
+Column: badge_description2, Type: text, Nullable: YES
+Column: badge_description3, Type: text, Nullable: YES
+Column: badge_icon_url, Type: text, Nullable: YES
+Column: badge_criteria, Type: text, Nullable: YES
+Column: badge_name, Type: character varying, Nullable: NO
+Column: badge_description, Type: text, Nullable: YES
+Database connection closed.
+
+
+
+gold badge: https://cdn3.vectorstock.com/i/1000x1000/67/07/golden-award-badge-vector-14876707.jpg,id=1,
+silver badge: https://thumbs.dreamstime.com/z/silver-badge-12804081.jpg
+Bronze badge:https://cdn4.vectorstock.com/i/1000x1000/58/43/bronze-award-badge-vector-22175843.jpg
+
+
+
+
+
+gold badge: https://cdn3.vectorstock.com/i/1000x1000/67/07/golden-award-badge-vector-14876707.jpg,id=1,
+
+description
+
+The Gold Badge symbolizes excellence and is awarded to individuals who achieve a milestone of 150 points in their respective performance or contributions. Representing the highest level of recognition, it highlights exceptional commitment, skill, and achievement. Recipients of this badge set a benchmark for others and demonstrate outstanding capabilities in their domain.
+
+
+Criteria
+
+The Gold Badge is a prestigious honor awarded to users who demonstrate exceptional performance by accumulating at least 150 points. This badge signifies outstanding achievement and dedication, setting the recipient apart as a high-performing individual in their domain. Users who meet this criterion can claim the badge as a testament to their excellence and commitment.
+
+badgename 
+gold badge	
+
+
+
+
+
+
+silver badge: https://thumbs.dreamstime.com/z/silver-badge-12804081.jpg
+
+description
+
+The Silver Badge symbolizes distinguished achievement and is awarded to individuals who reach a milestone of 100 points in their performance or contributions. Representing the second highest level of recognition, it signifies exceptional dedication, skill, and competence. Recipients of this badge showcase their outstanding capabilities and set themselves apart as high achievers, inspiring others to strive for excellence
+
+
+Criteria
+
+The Silver Badge is a distinguished honor awarded to users who demonstrate notable performance by accumulating at least 100 points. This badge signifies significant achievement and dedication, highlighting the recipient as an accomplished individual in their field. Users who meet this criterion can claim the badge as recognition of their skill and commitment, motivating others to pursue excellence
+
+badgename 
+
+
+silver badge
+
+
+
+
+
+
+
