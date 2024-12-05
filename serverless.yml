@@ -1,0 +1,60 @@
+service: user-actions
+
+plugins:
+  - serverless-offline
+  - serverless-prune-plugin
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  stage: dev
+  region: eu-north-1
+
+functions:
+  getBadgesApi:
+    handler: src/lambdas/badgeHandler.getBadges
+    name: getBadges-Api
+    description: Fetch all badges.
+    timeout: 30
+    memorySize: 128
+    events:
+      - http:
+          path: badges
+          method: GET
+
+  assignBadgeApi:
+    handler: src/lambdas/badgeHandler.assignBadge
+    name: assignBadge-Api
+    description: Assign a badge to a user.
+    timeout: 30
+    memorySize: 128
+    events:
+      - http:
+          path: badges/assign
+          method: POST
+ 
+  getBadgesByUserIdApi:
+    handler: src/lambdas/badgeHandler.getBadgesByUserId
+    name: getBadgesByUserId-Api
+    description: Fetch all badges assigned to a user by their user_id.
+    timeout: 30
+    memorySize: 128
+    events:
+      - http:
+          path: badges/{user_id}
+          method: GET
+
+custom:
+  prune:
+    automatic: true
+    number: 5
+
+resources:
+  Resources:
+    ApiGatewayResponse:
+      Type: AWS::ApiGateway::GatewayResponse
+      Properties:
+        ResponseType: DEFAULT_4XX
+        ResponseParameters:
+          gatewayresponse.header.Access-Control-Allow-Origin: "'*'"
+          gatewayresponse.header.Access-Control-Allow-Headers: "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'"
